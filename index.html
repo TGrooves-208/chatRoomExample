@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gil Aguilar Chat</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>Red Eye Chat</h2>
+          <div class="input-group col-6 mx-auto enter-name">
+            <input type="text" id="name-input" class="form-control" placeholder="Enter Your Name">
+            <span class="input-group-addon submit-name">Enter</span>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="chat-window">
+            <div id="messages"></div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="input-group enter-chat-message">
+            <input type="text" id="chat-input" class="form-control" placeholder="Chat Message...">
+            <span class="input-group-addon submit-chat-message">Submit</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 text-center">
+        <small>
+          Powered by <a href="">Red Eye Development</a>
+        </small>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascript/chat.js"></script>
+  </body>
+</html>
